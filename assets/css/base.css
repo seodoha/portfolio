@@ -1,0 +1,58 @@
+@charset "utf-8";
+@import url(./font.css);
+
+/*** Common ***/
+* {max-height: 1000000px;margin: 0;padding: 0;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box}
+img,fieldset,button {border: none}
+html,body {height: 100%}
+body {position: relative;background: #fff;font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", "돋움", Dotum,"굴림", Gulim, Tahoma, Verdana, Geneva, sans-serif, Apple Gothic,AppleGothic;font-size: 16px;font-weight: 400;color: #333;line-height: 1;-webkit-text-size-adjust: none;font-smoothing: antialiased;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale}
+
+h1,h2,h3,h4,h5 {font-weight: 400}
+hr,button img {display: none}
+button {background: none;overflow: visible}
+input,select,button,textarea,pre {font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", "돋움", Dotum,"굴림", Gulim, Tahoma, Verdana, Geneva, sans-serif, Apple Gothic,AppleGothic;font-size: 16px;font-weight: 400;color: #333;line-height: 1.2;vertical-align: middle;outline: 0}
+input[type="submit"] {cursor: pointer;appearance: none;-moz-appearance: none;-webkit-appearance: none;border-radius: 0;-moz-border-radius: 0;-webkit-border-radius: 0}
+input:-ms-input-placeholder {color: #b9b9b9;font-weight: 300} /* M$ */
+input:-webkit-input-placeholder {color: #b9b9b9;font-weight: 300} /* webkit */
+input:-moz-placeholder {color: #b9b9b9;font-weight: 300} /* firefox */
+select {-webkit-appearance: none;-moz-appearance: none;appearance: none;background: url(../images/common/ico/sel_arr_down.png) no-repeat right 15px top 50%, #fff;border: 1px solid #d7d7d7;outline: 0;letter-spacing: -1px;cursor: pointer}
+option {outline: 0}
+select::-ms-expand {display: none}
+ul,li {list-style: none}
+a {display: inline-block;font-weight: 400;color: #333;text-decoration: none;vertical-align: middle;cursor: pointer}
+a:hover,a:active,a:focus,a:visited {text-decoration: none}
+textarea {overflow: auto;padding: 10px;background: #fff;border: solid 1px #cccfd4;font-size: 16px;color: #555;width: 100%;resize: none}
+table {width: 100%;table-layout: fixed;border-collapse: collapse;border-spacing: 0;text-align: center}
+table img {vertical-align: middle}
+th,td {vertical-align: middle;word-wrap: break-word;word-break: break-all;box-sizing: border-box}
+form {margin: 0;padding: 0}
+img {max-width: 100%;vertical-align: middle}
+table img {width: auto;vertical-align: middle}
+legend {position: absolute;left: 0;top: 0;width: 0;height: 0;overflow: hidden;visibility: hidden;font-size: 0;line-height: 0} /* For Screen Reader */
+caption {width: 1px;height: 1px;margin: 0;padding: 0;font-size: 0;line-height: 0;text-indent: -9999px;overflow: hidden;position: absolute;left: 0;top: 0}
+em {font-style: normal}
+label {cursor: pointer}
+
+.blind,.disabled {position: absolute;left: -9999px;top: -9999px}
+.clear:after {content: "";display: block;clear: both}
+.hidden {text-indent: -9999px;white-space: nowrap;overflow: hidden;line-height: 0;text-shadow: none;color: transparent;font-size: 0;display: none}
+table td {word-wrap: break-word}
+input[type="number"]::-webkit-outer-spin-button,input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0}
+button,html [type="button"],[type="reset"],[type="submit"] {-webkit-appearance: button;cursor: pointer}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {border-style: none;padding: 0}
+button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring {outline: 1px dotted ButtonText}
+input::-ms-clear,input::-ms-reveal {display: none;width: 0;height: 0}
+input::-webkit-search-decoration,input::-webkit-search-cancel-button,input::-webkit-search-results-button,input::-webkit-search-results-decoration {display: none}
+iframe {border: none}
+
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display: block}
+address {font-style: normal}
+
+/* skipNav 처리 코드 */
+#skipNav{position: fixed; overflow: hidden; z-index: 999; width: 100%; left: 0; top: 0}
+#skipNav a{display: block; overflow: hidden; height: 1px; margin-bottom: -1px; text-align: center; text-decoration: none; color: #333; font-size: 16px}
+#skipNav a:hover,#skipNav a:focus,#skipNav a:active{display:block; height:auto; padding:10px 0; background: #f2f2f2;}
+
+
